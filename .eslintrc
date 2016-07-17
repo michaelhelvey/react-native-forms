@@ -1,0 +1,15 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "import/no-unresolved": [2, { ignore: ['react', 'react-native', '\.ios||android.js$'] }],
+      "react/jsx-boolean-value": [2, "always"],
+      "react/jsx-no-bind": 0,
+      "react/prop-types": [2, { ignore: ['children'] }],
+      "arrow-body-style": ["error", "as-needed"],
+      "no-unused-expressions": [2, { "allowShortCircuit": true }]
+    }
+}

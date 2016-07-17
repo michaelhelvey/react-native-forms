@@ -1,0 +1,37 @@
+{
+  "name": "react-native-forms",
+  "version": "0.1.0",
+  "description": "UI library for React Native, for easily building complex form-based interfaces.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "form",
+    "react",
+    "native",
+    "form",
+    "ios",
+    "android",
+    "react",
+    "component"
+  ],
+  "author": "Michael Helvey",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2"
+  },
+  "peerDependencies": {
+    "react-native": "^0.28"
+  },
+  "dependencies": {
+    "lodash.isequal": "^4.2.0",
+    "react-native-keyboard-aware-scroll-view": "^0.1.2"
+  }
+}

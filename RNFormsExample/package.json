@@ -1,0 +1,15 @@
+{
+  "name": "RNFormsExample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "15.2.0",
+    "react-native": "0.29.0",
+    "react-native-keyboard-aware-scroll-view": "^0.1.2",
+    "react-native-vector-icons": "^2.0.3",
+    "react-native-forms": "git+https://github.com/michaelhelvey/react-native-forms.git"
+  }
+}
