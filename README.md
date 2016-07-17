@@ -1,14 +1,32 @@
 # React Native Forms #
+[![npm version](https://badge.fury.io/js/react-native-forms.svg)](https://badge.fury.io/js/react-native-forms)
 
 React Native Forms is a cross-platform library for creating native-looking forms using [React Native](https://github.com/facebook/react-native).
 
 Some benefits of React Native Forms:
 
 - Works for iOS and Android out of the box.
-- A library of common form elements and behaviors out of the box.
-- Easily extensible API allowing for the creation of custom appearances and behaviors.
-- Exposes functions for handling form data outside of the form components, for easy use in [Flux](https://github.com/facebook/flux) / [Redux](https://github.com/reactjs/redux) applications.
-- Customizable form validation API, with a library of common validations available out of the box.
+- Easily extensible, allowing for the creation of custom appearances and behaviors.
+- Exposes functions for handling form data outside of the form components, for easy use in [Flux](https://github.com/facebook/flux) /[Redux](https://github.com/reactjs/redux) applications.
+- Customizable form validation API.  Inject `validator` functions as props to all your form components, and get errors by simply calling `getValidationErrors` on your form to get a serialized copy of all your validation errors.
+- Simple, declarative syntax - you don't have to write any styles at all to produce a form, if you don't want to (although all default styles are overridable)
+
+```js
+<Form ref={(form) => this.form = form}>
+  <Section title={"SECTION"}>
+    <PushButtonCell ref="push" title="Push me!"/>
+    <TextInputCell
+      ref="input"
+      inputProps={{placeholder: "Input here"}}
+    />
+  </Section>
+</Form>
+```
+Then, you can get the the serialized data from your form by simply calling `this.form.getData();`
+
+- Plus, a library of common form components available out of the box:
+
+![Example Screenshot](img/ExampleScreenshot.png)
 
 <a name="Installation"></a>
 ## Installation ##
@@ -50,7 +68,7 @@ Additionally, each child component has a `validator` prop, which you can use to 
 
 Returns a *copy* of the form's data, expressed as an object, in the shape:
 
-```javascript
+```js
 {
   sectionRef: {
     firstChildRef: firstChildValue,
@@ -64,7 +82,7 @@ Returns a *copy* of the form's data, expressed as an object, in the shape:
 
 Returns a *copy* of the form's validation errors, expressed as an object of error objects in the shape:
 
-```javascript
+```js
 {
   sectionRef: {
     childRef: childValidationErrMessage,
@@ -106,10 +124,10 @@ Returns a validator function, created with specified options.  You can pass eith
 
 ##### Arguments
 
-- [`validator(value): boolean`] (*Function*): This function is passed the value of the component the validator is passed to as a prop, and should return the boolean value of whether the component's value is valid.
+- [`validator(value): boolean`] *Function*: This function is passed the value of the component the validator is passed to as a prop, and should return the boolean value of whether the component's value is valid.
 
-- [`options`] (*Object*): Customizes the behavior of the validator function.
-  - [`errorMessage`] (*String*): The message that the validator should fail with.
+- [`options`] *Object*: Customizes the behavior of the validator function.
+  - [`errorMessage`] *String*: The message that the validator should fail with.
 
 ### Components
 

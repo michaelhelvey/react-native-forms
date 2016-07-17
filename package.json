@@ -1,7 +1,7 @@
 {
   "name": "react-native-forms",
-  "version": "0.1.0",
-  "description": "UI library for React Native, for easily building complex form-based interfaces.",
+  "version": "0.1.1",
+  "description": "A simple, declarative API for creating cross-platform, native-appearing forms with React Native.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
