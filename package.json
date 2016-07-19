@@ -3,8 +3,10 @@
   "version": "0.1.1",
   "description": "A simple, declarative API for creating cross-platform, native-appearing forms with React Native.",
   "main": "index.js",
+  "repository": "https://github.com/michaelhelvey/react-native-forms",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint RNFormsExample/*.js lib/**"
   },
   "keywords": [
     "react",
@@ -21,6 +23,7 @@
   "author": "Michael Helvey",
   "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "eslint": "^3.0.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-import": "^1.10.2",

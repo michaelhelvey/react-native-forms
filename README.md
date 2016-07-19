@@ -1,5 +1,6 @@
 # React Native Forms #
 [![npm version](https://badge.fury.io/js/react-native-forms.svg)](https://badge.fury.io/js/react-native-forms)
+[![Build Status](https://travis-ci.org/michaelhelvey/react-native-forms.svg?branch=master)](https://travis-ci.org/michaelhelvey/react-native-forms)
 
 React Native Forms is a cross-platform library for creating native-looking forms using [React Native](https://github.com/facebook/react-native).
 
@@ -57,7 +58,7 @@ The top-level `Form` component exposes functions and props to handle data in the
   - [`onPress([ref])`](#onPress)
   - [`onValidationError([ref], [message])`](#onValidationError)
 
-If you are developing you own component for use with React Native Forms, note that an[`onChange([ref], [value])`](#onChange) and [`onPress([ref])`](#onPress) function is injected into each child component of a `Form`, and you will need to make sure you call `this.props.onChange(value)` or `this.props.onPress()` at the appropriate times.
+If you are developing your own component for use with React Native Forms, note that an[`onChange([ref], [value])`](#onChange) and [`onPress([ref])`](#onPress) function is injected into each child component of a `Form`, and you will need to make sure you call `this.props.onChange(value)` or `this.props.onPress()` at the appropriate times.
 
 Additionally, each child component has a `validator` prop, which you can use to pass a function to validate the component's value.  See [Form Validation](#FormValidation) below for more information.
 
