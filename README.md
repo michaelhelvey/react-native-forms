@@ -25,9 +25,11 @@ Some benefits of React Native Forms:
 ```
 Then, you can get the the serialized data from your form by simply calling `this.form.getData();`
 
-- Plus, a library of common form components available out of the box:
+- Plus, a library of common form components available out of the box, for iOS and Android:
 
-![Example Screenshot](img/ExampleScreenshot.png)
+iOS             |  Android
+:-------------------------:|:-------------------------:
+![](img/ExampleScreenshot.png)  |  ![](img/AndroidScreenshot.png)
 
 <a name="Installation"></a>
 ## Installation ##
