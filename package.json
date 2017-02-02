@@ -1,6 +1,6 @@
 {
   "name": "react-native-forms",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A simple, declarative API for creating cross-platform, native-appearing forms with React Native.",
   "main": "index.js",
   "repository": "https://github.com/michaelhelvey/react-native-forms",
