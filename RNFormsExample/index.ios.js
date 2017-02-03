@@ -23,7 +23,7 @@ class RNFormsExample extends Component {
       <NavigatorIOS
         initialRoute={{
           component: ExampleForm,
-          title: "React Native Forms",
+          title: 'React Native Forms',
         }}
         style={{flex: 1}}
       />

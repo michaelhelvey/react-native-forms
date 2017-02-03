@@ -14,11 +14,11 @@ Some benefits of React Native Forms:
 
 ```js
 <Form ref={(form) => this.form = form}>
-  <Section title={"SECTION"}>
-    <PushButtonCell ref="push" title="Push me!"/>
+  <Section title={'SECTION'}>
+    <PushButtonCell ref='push' title='Push me!'/>
     <TextInputCell
-      ref="input"
-      inputProps={{placeholder: "Input here"}}
+      ref='input'
+      inputProps={{placeholder: 'Input here'}}
     />
   </Section>
 </Form>
@@ -31,11 +31,11 @@ iOS             |  Android
 :-------------------------:|:-------------------------:
 ![](img/ExampleScreenshot.png)  |  ![](img/AndroidScreenshot.png)
 
-<a name="Installation"></a>
+<a name='Installation'></a>
 ## Installation ##
 `npm install react-native-forms --save`
 
-The package has no native dependencies.  In the example project, I use the excellent [react-native-vector-icons]("https://github.com/oblador/react-native-vector-icons") for icons in the example library and screenshots, but React Native Forms does not depend on it.
+The package has no native dependencies.  In the example project, I use the excellent [react-native-vector-icons]('https://github.com/oblador/react-native-vector-icons') for icons in the example library and screenshots, but React Native Forms does not depend on it.
 
 You can then require any component or function from the library:
 
@@ -45,7 +45,7 @@ Or if you use ES6 syntax:
 
 `import { Form, Section, createValidator } from 'react-native-forms';`
 
-<a name="Documentation"></a>
+<a name='Documentation'></a>
 ## Documentation ##
 
 ### Form Validation
@@ -66,7 +66,7 @@ Additionally, each child component has a `validator` prop, which you can use to 
 
 ### Method Reference
 
-<a name="getData"></a>
+<a name='getData'></a>
 #### getData() ####
 
 Returns a *copy* of the form's data, expressed as an object, in the shape:
@@ -80,7 +80,7 @@ Returns a *copy* of the form's data, expressed as an object, in the shape:
 };
 ```
 
-<a name="getValidationErrors"></a>
+<a name='getValidationErrors'></a>
 #### getValidationErrors() ####
 
 Returns a *copy* of the form's validation errors, expressed as an object of error objects in the shape:
@@ -93,28 +93,28 @@ Returns a *copy* of the form's validation errors, expressed as an object of erro
 }
 ```
 
-<a name="onChange"></a>
+<a name='onChange'></a>
 #### onChange([ref], [value]) ####
 
 Where `ref` is the ref of the child component whose value has changed, and `value` is the new value of the child component.
 
 Note: it is not recommended to perform validation as a result of this function.  Instead, inject a validator into the child component through the `validator` prop, and listen for validation errors at the the top-level `Form`'s [`getValidationErrors`](#getValidationErrors) or [`onValidationError`](#onValidationError) functions.
 
-<a name="onPress"></a>
+<a name='onPress'></a>
 #### onPress([ref]) ####
 
 Where `ref` is the ref of the child component responding to the touch event.  
 
 This is called by each component that respond to touch events.  Examples from the library would include `PushButtonCell` or `ButtonCell`.
 
-<a name="onValidationError"></a>
+<a name='onValidationError'></a>
 #### onValidationError([sectionRef], [sectionData]) ####
 
 Where `sectionRef` is the ref of the child section component whose validation function has failed.  The error message is set as a value on whichever child of the section failed its `validator` prop.
 
 You'll probably never need to use this function, since you probably only want to alert users of validation errors on submit.
 
-<a name="FormValidation"></a>
+<a name='FormValidation'></a>
 ### Form Validation
 
 Each validation function takes a single argument, `value`, which contains the value of the component it's validating.  If validation fails, the function throws an error with a specified message.
@@ -152,10 +152,10 @@ You can write your own components, and give them whatever styles or behaviors yo
 
 Remember that the parent `Section` will automatically inject `onPress` and `onChange` props into your component, and bind the child's `refs` to the function.  To make your component work with React Native Form's data API, simply call `this.props.onChange(value)` or `this.props.onPress()` at appropriate times.  For more information, see the example project.
 
-<a name="FAQ"></a>
+<a name='FAQ'></a>
 ## FAQ ##
 
-<a name="childKeyboardListenerError"/>
+<a name='childKeyboardListenerError'/>
 ##### When I navigate to the form, I get an error: RCTUIManager.m Error frame is not a descendant of < RCTShadowView >
 
 This error happens when you have multiple views listening for keyboard events.  This can happen, for example, when multiple scroll views inside a navigation stack are listening to keyboard events in order to scroll to a text input.
@@ -164,7 +164,7 @@ You can fix this by unmounting any components which are listening for keyboard e
 
 I'd like to fix this and allow for keyboard aware child forms.  This seems to be possible.  (For example, see [this discussion](https://github.com/facebook/react-native/pull/7876) in react-native).  PR's are welcome.
 
-<a name="Contributing"></a>
+<a name='Contributing'></a>
 ## Contributing ##
 
 PR's are *very* welcome!  This is a very young library, and probably has a wealth of bugs and optimizations to fix and improve on.  I have just a couple requests:
@@ -174,6 +174,6 @@ PR's are *very* welcome!  This is a very young library, and probably has a wealt
 
 Thank you!
 
-<a name="License"></a>
+<a name='License'></a>
 ## License ##
  MIT

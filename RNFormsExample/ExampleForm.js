@@ -36,8 +36,8 @@ class ExampleForm extends React.Component {
   }
 
   render() {
-    const forwardIcon = <Icon name={"ios-arrow-forward"} color={"gray"} size={20} />;
-    const alertIcon = <Icon name={"ios-alert"} color={"gray"} size={20} />;
+    const forwardIcon = <Icon name={'ios-arrow-forward'} color={'gray'} size={20} />;
+    const alertIcon = <Icon name={'ios-alert'} color={'gray'} size={20} />;
     return (
       <View style={{ flex: 1, backgroundColor: '#EFEFF4' }}>
         <Form
@@ -46,37 +46,37 @@ class ExampleForm extends React.Component {
           onChange={this.handleChange.bind(this)}
         >
           <Section
-            ref={"firstSection"}
-            title={"FIRST SECTION"}
+            ref={'firstSection'}
+            title={'FIRST SECTION'}
           >
             <ButtonCell
-              ref={"ButtonCell"}
-              title={"ButtonCell"}
-              textAlign={"center"}
-              titleColor={"red"}
+              ref={'ButtonCell'}
+              title={'ButtonCell'}
+              textAlign={'center'}
+              titleColor={'red'}
             />
             <PushButtonCell
-              ref={"PushButtonCell"}
+              ref={'PushButtonCell'}
               rightIcon={forwardIcon}
               icon={alertIcon}
-              title={"PushButtonCell"}
+              title={'PushButtonCell'}
             />
             <SwitchCell
-              ref={"SwitchCell"}
-              switchTintColor={"blue"}
-              title={"SwitchCell"}
-              titleColor={"black"}
+              ref={'SwitchCell'}
+              switchTintColor={'blue'}
+              title={'SwitchCell'}
+              titleColor={'black'}
               icon={alertIcon}
             />
           </Section>
           <Section
-            ref={"secondSection"}
-            title={"SECOND SECTION"}
-            helpText={"The helpText prop allows you to place text at the section bottom."}
+            ref={'secondSection'}
+            title={'SECOND SECTION'}
+            helpText={'The helpText prop allows you to place text at the section bottom.'}
           >
             <ActionSheetCell
-              ref={"ActionSheetCell"}
-              title={"ActionSheetCell"}
+              ref={'ActionSheetCell'}
+              title={'ActionSheetCell'}
               options={['Option 1', 'Option 2', 'Option 3']}
               icon={alertIcon}
               selectedValueIndex={0}
@@ -87,14 +87,14 @@ class ExampleForm extends React.Component {
               inputProps={{ placeholder: 'Single line TextInputCell' }}
             />
             <TextInputCell
-              ref={"MultiLineTextInput"}
+              ref={'MultiLineTextInput'}
               inputProps={{ multiline: true, color: 'green' }}
               cellHeight={100}
-              value={"Multiline TextInputCell with specified value and color."}
+              value={'Multiline TextInputCell with specified value and color.'}
             />
             <DatePickerCell
-              ref={"DatePickerCell"}
-              title={"DatePickerCell"}
+              ref={'DatePickerCell'}
+              title={'DatePickerCell'}
               datePickerProps={{ mode: 'datetime' }}
               value={new Date('7/1/16')}
               getDateString={(date) => {
@@ -111,26 +111,26 @@ class ExampleForm extends React.Component {
             />
           </Section>
           <Section
-            ref={"customSection"}
-            title={"CUSTOM COMPONENTS"}
+            ref={'customSection'}
+            title={'CUSTOM COMPONENTS'}
           >
-            <CustomInput title={"CustomInput"} ref={"CustomInput"} />
+            <CustomInput title={'CustomInput'} ref={'CustomInput'} />
           </Section>
           <Section
-            title={"DATA"}
-            ref={"dataSection"}
+            title={'DATA'}
+            ref={'dataSection'}
           >
             <ButtonCell
-              ref={"LogData"}
-              title={"Log Form Data"}
-              textAlign={"center"}
-              titleColor={"blue"}
+              ref={'LogData'}
+              title={'Log Form Data'}
+              textAlign={'center'}
+              titleColor={'blue'}
             />
             <ButtonCell
-              ref={"LogValidationErrors"}
-              title={"Log Validation Errors"}
-              textAlign={"center"}
-              titleColor={"blue"}
+              ref={'LogValidationErrors'}
+              title={'Log Validation Errors'}
+              textAlign={'center'}
+              titleColor={'blue'}
             />
           </Section>
         </Form>

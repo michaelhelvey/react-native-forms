@@ -60,12 +60,12 @@ export default class CustomInput extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Icon name={"ios-ionic"} size={20} style={styles.icon} />
+        <Icon name={'ios-ionic'} size={20} style={styles.icon} />
         <Text style={styles.title}>{this.props.title}</Text>
         {/* <Text style={styles.rightTextInput}>{this.props.title}</Text>*/}
         <TextInput
           value={this.state.value}
-          placeholder={"Value Text"}
+          placeholder={'Value Text'}
           maxLength={25}
           style={styles.rightTextInput}
           onChange={this.handleChange.bind(this)}
