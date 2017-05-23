@@ -2,6 +2,12 @@
 [![npm version](https://badge.fury.io/js/react-native-forms.svg)](https://badge.fury.io/js/react-native-forms)
 [![Build Status](https://travis-ci.org/michaelhelvey/react-native-forms.svg?branch=master)](https://travis-ci.org/michaelhelvey/react-native-forms)
 
+### Project status
+
+I wrote this library a number of months ago for a use-case at work, when React Native was still quite young, comparatively.  I open sourced it in the general spirit of sharing code that had been useful to me, but with the vicissitudes of life being what they are, I didn't have the opportunity to keep it up to date, and it's become a bit antiquated.  If you want to use it, go for it!  I'm still using it in production.  But I don't have time to update it or add features, though I will take PRs.  For similiar UI functionality within a much larger and better-maintained project, I'd recommend checking out [React Native Elements](https://react-native-training.github.io/react-native-elements/). Thanks for stopping by!
+
+---
+
 React Native Forms is a cross-platform library for creating native-looking forms using [React Native](https://github.com/facebook/react-native).
 
 Some benefits of React Native Forms:
